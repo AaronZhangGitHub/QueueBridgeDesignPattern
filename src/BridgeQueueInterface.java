@@ -1,5 +1,5 @@
 public interface BridgeQueueInterface {
-    public void enqueue(Node enqueNode);
+    public boolean enqueue(Node enqueNode);
     public Node dequeue();
 
 }
