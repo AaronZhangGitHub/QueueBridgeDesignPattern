@@ -3,6 +3,7 @@ public class QueueArrayIMPL implements BridgeQueueInterface{
     int head;
     int tail;
     int size;
+    @Override
     public boolean enqueue(Node enqueNode){
         if(size==queue.length){
             //Or resize operation
@@ -16,6 +17,7 @@ public class QueueArrayIMPL implements BridgeQueueInterface{
         size++;
         return true;
     }
+    @Override
     public Node dequeue(){
         Node dequeueNode;
         if(size==0){
